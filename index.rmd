@@ -1456,3 +1456,20 @@ head -n "$2" "$1" | tail -n "$3"
 A comment starts with a `#` character and runs to the end of the line.
 The computer ignores comments,
 but they're invaluable for helping people understand and use scripts.
+
+# Fun stuff!
+## Reproducible Science with Docker
+I am not a (Docker) expert, but it's something I want to get into. It brings reproducibility to another level by providing a machine independent environment and keeping track of ALL your dependencies. The (ROpenSci tutorial)[http://ropenscilabs.github.io/r-docker-tutorial/] is a great tutorial about using the `hadleyverse` which is a pre-built docker container that has all your favourite R packages and includes RStudio Server.
+
+## High Performance Computing
+In most cases, if you are using a High Performance Computing server, you will need to use the command line to submit your work. You can read about how to use the one that I use at the University if McGill (here)[http://www.hpc.mcgill.ca/index.php/starthere]. However, it's probably more useful to look up your own local version.
+
+In general, logging in can be down with 1 line (once you have a username and password):
+~~~ {.bash}
+$ ssh username@hpcname
+~~~
+
+## Stitching multipanel figures
+Sometimes you just can't figure out how to stitch those panels together, or your co-author gives you 20 panels every time you edit the document. In these cases, you can save alot of time by scripting this with (ImageMagick)[http://www.imagemagick.org/Usage/montage/#geometry_size]!
+
+Investigate the shell scripts in the fA7_panels folder which is in the data folder
