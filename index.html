@@ -220,6 +220,7 @@ div.tocify {
 
 
 <p>This lesson is my customized version of the Software Carpentry lesson on <a href="http://swcarpentry.github.io/shell-novice/">The Unix Shell</a>. Please see the original lesson for a more detailed walkthrough</p>
+<p>Please download the <a href="https://github.com/remi-daigle/shell/archive/gh-pages.zip">data</a> folder if you want to follow along</p>
 <div id="what-is-the-shell" class="section level1">
 <h1>What is ‘the shell’?</h1>
 <p>For our purposes the shell is ‘that box where you type in commands’. It is a <strong>command-line interface</strong> that looks like DOS (if you’re old enough to remember DOS). It has many names and ‘flavours’; Windows users have the Command Prompt, Mac and Unix/Linux users will have the terminal. In this workshop we will learn the BASH shell because it is the most popular shell language as well as being the default for Unix/Linux/Mac’s (and can be easily installed on Windows machines).</p>
@@ -837,6 +838,23 @@ TER      18              1</code></pre>
 # Usage: middle.sh filename end_line num_lines
 head -n &quot;$2&quot; &quot;$1&quot; | tail -n &quot;$3&quot;</code></pre>
 <p>A comment starts with a <code>#</code> character and runs to the end of the line. The computer ignores comments, but they’re invaluable for helping people understand and use scripts.</p>
+</div>
+<div id="fun-stuff" class="section level1">
+<h1>Fun stuff!</h1>
+<div id="reproducible-science-with-docker" class="section level2">
+<h2>Reproducible Science with Docker</h2>
+<p>I am not a (Docker) expert, but it’s something I want to get into. It brings reproducibility to another level by providing a machine independent environment and keeping track of ALL your dependencies. The (ROpenSci tutorial)[<a href="http://ropenscilabs.github.io/r-docker-tutorial/" class="uri">http://ropenscilabs.github.io/r-docker-tutorial/</a>] is a great tutorial about using the <code>hadleyverse</code> which is a pre-built docker container that has all your favourite R packages and includes RStudio Server.</p>
+</div>
+<div id="high-performance-computing" class="section level2">
+<h2>High Performance Computing</h2>
+<p>In most cases, if you are using a High Performance Computing server, you will need to use the command line to submit your work. You can read about how to use the one that I use at the University if McGill (here)[<a href="http://www.hpc.mcgill.ca/index.php/starthere" class="uri">http://www.hpc.mcgill.ca/index.php/starthere</a>]. However, it’s probably more useful to look up your own local version.</p>
+<p>In general, logging in can be down with 1 line (once you have a username and password): <sub>~</sub> {.bash} $ ssh <a href="mailto:username@hpcname">username@hpcname</a> <sub>~</sub></p>
+</div>
+<div id="stitching-multipanel-figures" class="section level2">
+<h2>Stitching multipanel figures</h2>
+<p>Sometimes you just can’t figure out how to stitch those panels together, or your co-author gives you 20 panels every time you edit the document. In these cases, you can save alot of time by scripting this with (ImageMagick)[<a href="http://www.imagemagick.org/Usage/montage/#geometry_size" class="uri">http://www.imagemagick.org/Usage/montage/#geometry_size</a>]!</p>
+<p>Investigate the shell scripts in the fA7_panels folder which is in the data folder</p>
+</div>
 </div>
 
 
